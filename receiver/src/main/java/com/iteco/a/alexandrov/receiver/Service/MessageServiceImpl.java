@@ -57,6 +57,7 @@ public class MessageServiceImpl implements MessageService {
 
     /**
      * Checks whether the received message is correctly written to the H2 database.
+     *
      * @param msgEnt - The message that will be searched in the database.
      * @return - Search Result.
      */

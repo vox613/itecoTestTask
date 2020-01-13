@@ -6,5 +6,6 @@ import org.slf4j.LoggerFactory;
 
 public interface RabbitMQSenderService {
     Logger log = LoggerFactory.getLogger(RabbitMQSenderService.class);
+
     Message send(Message message);
 }

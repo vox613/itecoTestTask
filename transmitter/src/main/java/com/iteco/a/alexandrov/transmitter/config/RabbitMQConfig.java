@@ -25,6 +25,7 @@ public class RabbitMQConfig {
 
     /**
      * Creates a queue with specific parameters.
+     *
      * @return - created queue.
      */
     @Bean
@@ -35,6 +36,7 @@ public class RabbitMQConfig {
 
     /**
      * Creates a exchange with specific parameters.
+     *
      * @return - created exchange.
      */
     @Bean
@@ -45,6 +47,7 @@ public class RabbitMQConfig {
 
     /**
      * Link queue and exchanger using routing key.
+     *
      * @return - container collecting information to describe a binding.
      */
     @Bean

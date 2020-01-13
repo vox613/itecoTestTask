@@ -35,7 +35,7 @@ public class RabbitMQWebController {
      * @return - The response on the successful receipt of the request contains the request and the successful code.
      */
     @PostMapping("/messages")
-    public ResponseEntity postProducer(@RequestBody Message message) {
+    public ResponseEntity<Message> postProducer(@RequestBody Message message) {
         log.info("POST request message : " + message.getMsgText());
         rabbitMQSenderServiceImpl.send(message);
         return new ResponseEntity<>(message, HttpStatus.OK);
